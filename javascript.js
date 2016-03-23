@@ -1,5 +1,9 @@
 window.onload = init;
 
+var memory_values = [];
+var memory_tile_ids = [];
+var tiles_flipped = 0;
+
 //wat gebeurt er on page load
 function init() { 
 	var button = document.getElementById("play");
@@ -23,7 +27,9 @@ function playMusic() {
 
 //als op play geklikt wordt
 function buttonClick() {
-	
+	memory_values = [];
+	memory_tile_ids = [];
+	tiles_flipped = 0;
 	var selectbox = document.getElementById('moeilijkheidsgraad');
 	var selection = selectbox.options[selectbox.selectedIndex].value; //verkrijg gekozen moeilijkheidsgraad
 	document.getElementById("memory_board").innerHTML = ""; //reset bord
@@ -38,12 +44,6 @@ function buttonClick() {
 		alert("Kies een moeilijkheidsgraad a.u.b.")
 	}
 	}
-	
-
-	
-var memory_values = [];
-var memory_tile_ids = [];
-var tiles_flipped = 0;
 
 //random functie. Deze heb ik gedeeltelijk van een tutorialfilmpje gekopieerd. https://www.youtube.com/watch?v=c_ohDPWmsM0
 Array.prototype.memory_tile_shuffle = function(){
@@ -59,7 +59,7 @@ Array.prototype.memory_tile_shuffle = function(){
 //start nieuw bord
 function newBoard_beginner(){
 	var memory_array = ['bat','bat','bug','bug','cat','cat','dog','dog']; //plaatjes
-	var tiles_flipped = 0; //aantal dingen omgedraaid
+	tiles_flipped = 0; //aantal dingen omgedraaid
     memory_array.memory_tile_shuffle(); //shuffle de array
 	for(var i = 0; i < memory_array.length; i++){ //voor elk item in de array doe dit
 		
@@ -79,7 +79,7 @@ function newBoard_beginner(){
 
 function newBoard_expert(){
 	var memory_array = ['bat','bat','bug','bug','cat','cat','dog','dog','fly','fly','frog','frog'];
-	var tiles_flipped = 0;
+	tiles_flipped = 0;
     memory_array.memory_tile_shuffle();
 	for(var i = 0; i < memory_array.length; i++){
 
