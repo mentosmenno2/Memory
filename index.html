@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Memory</title>
+		<meta name="description" content="Memory" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<meta content="True" name="HandheldFriendly">
+		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<script src="javascript.js"></script>
+	</head>
+	
+	<body>
+		
+		<main>
+			
+			<section class="textleft">
+				<h1>Memory.</h1>
+				
+				<p id="soYouKnow"><i>So you know</i></p>
+					
+				<p id="textTrain">Train je hersenen en speel mee met dit leuke spel!</p>
+				
+				<h2>Spelgegevens</h2>
+				
+				<input id="speler1" name="speler1" type="text" value="Speler 1" onClick="this.setSelectionRange(0, this.value.length)" autofocus />
+				
+				<select id="moeilijkheidsgraad" name="moeilijkheidsgraad" value="moeilijkheidsgraad">
+					<option value="moeilijkheidsgraad" disabled selected >Moelijkheidsgraad</option>
+					<option value="Beginner">Beginner</option>
+					<option value="Expert">Expert</option>
+				</select>
+				<input id="play" type="submit" value="play!" />
+				
+			</section>
+			
+			<section class="cards" id="memory_board">
+			<!-- Hier komen de kaartjes in -->
+			</section>
+			
+		</main>
+		
+	</body>
+</html>

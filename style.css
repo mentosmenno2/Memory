@@ -1,0 +1,193 @@
+body {
+margin: 0px;
+font-family: 'Open Sans', sans-serif;
+background-image: url("img/background.jpg");
+padding-left: 80px;
+padding-right: 80px;
+}
+
+main {
+background-color: #01DC15;
+border-radius: 0 0 10px 10px;
+padding-left: 80px;
+padding-right: 80px;
+overflow: hidden;
+}
+
+h1 {
+font-family: 'Gloria Hallelujah', cursive;
+color: white;
+font-size: 50px;
+margin: 0px;
+}
+
+h2 {
+font-family: 'Gloria Hallelujah', cursive;
+color: white;
+font-size: 32px;
+margin: 0px;
+margin-bottom: 10px;
+}
+
+option {
+/*Rotate block*/
+	-ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    transform: rotate(2deg);
+}
+
+.textleft {
+width: 300px;
+float: left;
+margin-right: 75px;
+}
+
+#soYouKnow {
+font-size: 25px;
+margin: 0px;
+}
+
+#textTrain {
+font-size: 30px;
+}
+
+#speler1 {
+font-weight: bold;
+color: red;
+font-size: 35px;
+width: 100%;
+background-color: #6EBDFF;
+border: 0px solid red;
+border-radius: 5px;
+	/*Rotate block*/
+	-ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    transform: rotate(2deg);
+	margin-bottom: 18px;
+}
+
+#moeilijkheidsgraad {
+font-size: 24px;
+width: 100%;
+border-radius: 5px;
+/*Rotate block*/
+	-ms-transform: rotate(2deg); /* IE 9 */
+    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+    transform: rotate(2deg);
+	margin-bottom: 18px;
+	font-weight: bold;
+	background-color: #00FFFC
+}
+
+#play {
+width: 100%;
+background-color: #DD3600;
+border: 5px solid #AF2500;
+border-radius: 5px;
+font-size: 35px;
+margin-bottom: 30px;
+
+color: white;
+}
+
+#play:active{
+background-color: #AF2500;
+border: 5px solid #DD3600;
+}
+
+.cards {
+margin-top: 20px;
+}
+
+.card {
+border: 5px solid white;
+border-radius: 30px;
+width: 150px;
+height: 150px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+float: left;
+margin: 10px;
+background-image: url("img/memory-bg.jpg");
+cursor: pointer;
+}
+
+/*screen sizes*/
+
+@media all and (max-width: 1250px) and (min-width: 900px) {
+
+.card {
+width: 70px;
+height: 70px;
+}
+
+.cardnumber {
+margin-left: 45px;
+margin-top: -15px;
+}
+
+}
+
+@media all and (max-width: 899px) and (min-width: 650px){
+
+
+
+.card {
+width: 70px;
+height: 70px;
+}
+
+.cardnumber {
+margin-left: 45px;
+margin-top: -15px;
+}
+
+.textleft {
+width: 100%;
+float: none;
+display: inline-block;
+}
+
+.cards {
+display: inline-block;
+}
+
+}
+
+@media all and (max-width: 649px){
+
+.card {
+width: 70px;
+height: 70px;
+display: inline-block;
+}
+
+.cards {
+width: 100%;
+margin: 0 auto;
+}
+
+.cardnumber {
+margin-left: 45px;
+margin-top: -15px;
+}
+
+.textleft {
+float: none;
+width: 100%;
+margin-right: 0px;
+}
+
+body {
+width: 100%;
+padding-left: 0px;
+padding-right: 0px;
+}
+
+main {
+text-align: center;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+}
